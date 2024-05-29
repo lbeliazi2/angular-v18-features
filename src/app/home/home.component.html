@@ -1,0 +1,12 @@
+<body>
+<h2>Section 1. Zoneless Rendering</h2>
+<h3>{{descriptionSection1()}}</h3>
+<button (click)="changeSection1Title('You have changed the description.')"> Go zoneless</button>
+<h2> Signals</h2>
+<h3>Signals whose value can be set:</h3>
+<input [(ngModel)]="count" type="number">
+<p>{{count()}}</p>
+<h3> Signals which are computed from another value (here * 2): </h3>
+<p> {{doubleCount()}}</p>
+</body>
+
